@@ -1,0 +1,412 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+        companyName:
+            tab: ursacorelab.companyinfo::lang.tabs.company
+            label: ursacorelab.companyinfo::lang.companyname
+            span: storm
+            cssClass: col-sm-12 col-md-4
+
+        siteName:
+            tab: ursacorelab.companyinfo::lang.tabs.company
+            label: ursacorelab.companyinfo::lang.sitename
+            span: storm
+            cssClass: col-sm-12 col-md-4
+
+        slogan:
+            tab: ursacorelab.companyinfo::lang.tabs.company
+            label: ursacorelab.companyinfo::lang.slogan
+            span: storm
+            cssClass: col-sm-12 col-md-4
+
+        postalCode:
+            tab: ursacorelab.companyinfo::lang.tabs.company
+            label: ursacorelab.companyinfo::lang.postalCode
+            span: storm
+            cssClass: col-sm-12 col-md-2
+
+        addressCountry:
+            tab: ursacorelab.companyinfo::lang.tabs.company
+            label: ursacorelab.companyinfo::lang.addressCountry
+            span: storm
+            cssClass: col-sm-12 col-md-3
+
+        addressRegion:
+            tab: ursacorelab.companyinfo::lang.tabs.company
+            label: ursacorelab.companyinfo::lang.addressRegion
+            span: storm
+            cssClass: col-sm-12 col-md-3
+
+        addressLocality:
+            tab: ursacorelab.companyinfo::lang.tabs.company
+            label: ursacorelab.companyinfo::lang.addressLocality
+            span: storm
+            cssClass: col-sm-12 col-md-2
+
+        streetAddress:
+            tab: ursacorelab.companyinfo::lang.tabs.company
+            label: ursacorelab.companyinfo::lang.streetAddress
+            span: storm
+            cssClass: col-sm-12 col-md-2
+
+        email:
+            tab: ursacorelab.companyinfo::lang.tabs.company
+            label: ursacorelab.companyinfo::lang.email
+            span: storm
+            cssClass: col-sm-12 col-md-12
+
+        phones:
+            tab: ursacorelab.companyinfo::lang.tabs.phones_addresses
+            label: ursacorelab.companyinfo::lang.phones
+            span: storm
+            cssClass: col-sm-12 col-md-6
+            type: nestedform
+            usePanelStyles: false
+            form:
+                fields:
+                    list:
+                        type: repeater
+                        minItems: 1
+                        form:
+                            fields:
+                                phone:
+                                    label: ursacorelab.companyinfo::lang.phone
+
+        addresses:
+            tab: ursacorelab.companyinfo::lang.tabs.phones_addresses
+            label: ursacorelab.companyinfo::lang.addresses
+            span: storm
+            cssClass: col-sm-12 col-md-6
+            type: nestedform
+            usePanelStyles: false
+            form:
+                fields:
+                    list:
+                        type: repeater
+                        minItems: 1
+                        form:
+                            fields:
+                                address:
+                                    label: ursacorelab.companyinfo::lang.address
+
+        logo:
+            tab: ursacorelab.companyinfo::lang.tabs.company
+            label: ursacorelab.companyinfo::lang.logo
+            type: mediafinder
+            mode: image
+            imageWidth: auto
+            span: storm
+            cssClass: col-sm-12 col-md-4
+
+
+        monday_title:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            label: ursacorelab.companyinfo::lang.days.monday
+            type: section
+            span: storm
+            cssClass: col-sm-12 col-md-12
+
+        monday_active:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: switch
+            default: 1
+            span: storm
+            cssClass: col-sm-12 col-md-1
+
+        monday:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: repeater
+            sortable: false
+            minItems: 1
+            maxItems: 1
+            span: storm
+            cssClass: col-sm-12 col-md-11
+
+            form:
+                fields:
+                    min:
+                        label: ursacorelab.companyinfo::lang.days.min
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 09:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+                    max:
+                        label: ursacorelab.companyinfo::lang.days.max
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 18:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+
+        tuesday_title:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            label: ursacorelab.companyinfo::lang.days.tuesday
+            type: section
+            span: storm
+            cssClass: col-sm-12 col-md-12
+
+        tuesday_active:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: switch
+            default: 1
+            span: storm
+            cssClass: col-sm-12 col-md-1
+
+        tuesday:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: repeater
+            sortable: false
+            minItems: 1
+            maxItems: 1
+            span: storm
+            cssClass: col-sm-12 col-md-11
+
+            form:
+                fields:
+                    min:
+                        label: ursacorelab.companyinfo::lang.days.min
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 09:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+                    max:
+                        label: ursacorelab.companyinfo::lang.days.max
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 18:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+
+        wednesday_title:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            label: ursacorelab.companyinfo::lang.days.wednesday
+            type: section
+
+        wednesday_active:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: switch
+            default: 1
+            span: storm
+            cssClass: col-sm-12 col-md-1
+
+        wednesday:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: repeater
+            sortable: false
+            minItems: 1
+            maxItems: 1
+            span: storm
+            cssClass: col-sm-12 col-md-11
+
+            form:
+                fields:
+                    min:
+                        label: ursacorelab.companyinfo::lang.days.min
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 09:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+                    max:
+                        label: ursacorelab.companyinfo::lang.days.max
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 18:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+
+        thursday_title:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            label: ursacorelab.companyinfo::lang.days.thursday
+            type: section
+
+        thursday_active:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: switch
+            default: 1
+            span: storm
+            cssClass: col-sm-12 col-md-1
+
+        thursday:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: repeater
+            sortable: false
+            minItems: 1
+            maxItems: 1
+            span: storm
+            cssClass: col-sm-12 col-md-11
+
+            form:
+                fields:
+                    min:
+                        label: ursacorelab.companyinfo::lang.days.min
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 09:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+                    max:
+                        label: ursacorelab.companyinfo::lang.days.max
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 18:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+
+        friday_title:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            label: ursacorelab.companyinfo::lang.days.friday
+            type: section
+
+        friday_active:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: switch
+            default: 1
+            span: storm
+            cssClass: col-sm-12 col-md-1
+
+        friday:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: repeater
+            sortable: false
+            minItems: 1
+            maxItems: 1
+            span: storm
+            cssClass: col-sm-12 col-md-11
+
+            form:
+                fields:
+                    min:
+                        label: ursacorelab.companyinfo::lang.days.min
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 09:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+                    max:
+                        label: ursacorelab.companyinfo::lang.days.max
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 18:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+
+        saturday_title:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            label: ursacorelab.companyinfo::lang.days.saturday
+            type: section
+
+        saturday_active:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: switch
+            default: 0
+            span: storm
+            cssClass: col-sm-12 col-md-1
+
+        saturday:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: repeater
+            sortable: false
+            minItems: 1
+            maxItems: 1
+            span: storm
+            cssClass: col-sm-12 col-md-11
+
+            form:
+                fields:
+                    min:
+                        label: ursacorelab.companyinfo::lang.days.min
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 09:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+                    max:
+                        label: ursacorelab.companyinfo::lang.days.max
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 18:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+
+        sunday_title:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            label: ursacorelab.companyinfo::lang.days.sunday
+            type: section
+
+        sunday_active:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: switch
+            default: 0
+            span: storm
+            cssClass: col-sm-12 col-md-1
+
+        sunday:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: repeater
+            sortable: false
+            minItems: 1
+            maxItems: 1
+            span: storm
+            cssClass: col-sm-12 col-md-11
+
+            form:
+                fields:
+                    min:
+                        label: ursacorelab.companyinfo::lang.days.min
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 09:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+                    max:
+                        label: ursacorelab.companyinfo::lang.days.max
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 18:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+
+        holidays_title:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            label: ursacorelab.companyinfo::lang.days.holidays
+            type: section
+
+        holidays_active:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: switch
+            default: 0
+            span: storm
+            cssClass: col-sm-12 col-md-1
+
+        holidays:
+            tab: ursacorelab.companyinfo::lang.tabs.working_time
+            type: repeater
+            sortable: false
+            minItems: 1
+            maxItems: 1
+            span: storm
+            cssClass: col-sm-12 col-md-11
+
+            form:
+                fields:
+                    min:
+                        label: ursacorelab.companyinfo::lang.days.min
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 09:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+                    max:
+                        label: ursacorelab.companyinfo::lang.days.max
+                        type: datepicker
+                        mode: time
+                        default: "2000-01-01 18:00:00"
+                        span: storm
+                        cssClass: col-sm-12 col-md-6
+
