@@ -1,0 +1,29 @@
+{
+    "name" : "ursacorelab/wn-companyinfo-plugin",
+    "type" : "winter-plugin",
+    "description" : "Company info Plugin for WinterCMS",
+    "homepage" : "https://github.com/UrsacoreLab/wn-companyinfo-plugin",
+    "keywords" : [
+        "winter cms",
+        "winter",
+        "plugin",
+        "company-info"
+    ],
+    "license" : "MIT",
+    "authors" : [
+        {
+            "name" : "Artem Mr.VACO Feoktistov",
+            "role" : "Original Author"
+        }
+    ],
+    "support" : {
+        "source" : "https://github.com/UrsacoreLab/wn-companyinfo-plugin"
+    },
+    "require" : {
+        "php" : ">=8.0",
+        "composer/installers" : "~1.0"
+    },
+    "extra" : {
+        "installer-name" : "company-info"
+    }
+}
