@@ -12,7 +12,7 @@
 {
     "data": {
         "company_name": "",
-        "site_name": "",
+        "site_name": "Required site name",
         "phone": null,
         "email": "mail@mail.mail",
         "slogan": "",
@@ -23,10 +23,10 @@
         "street_address": "",
         "logotype": null,
         "phones": [
-            ""
+            "+000000"
         ],
         "addresses": [
-            ""
+            "Address"
         ],
         "working_time": {
             "week": {
@@ -78,6 +78,10 @@
                 }
             }
         }
-    }
+    },
+    "type": "success",
+    "show": true,
+    "translate_code": "statuses.synced",
+    "messages": null
 }
 ```
