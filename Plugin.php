@@ -8,6 +8,8 @@ use UrsacoreLab\CompanyInfo\Models\CompanySettings;
 
 class Plugin extends PluginBase
 {
+    public $require = ['UrsacoreLab.StaticVars'];
+
     public function pluginDetails(): array
     {
         return [
