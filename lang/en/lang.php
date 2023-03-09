@@ -41,4 +41,8 @@ return [
         'min' => 'The beginning of the work day',
         'max' => 'End of the working day',
     ],
+
+    'permissions' => [
+        'access' => 'Company info plugin access',
+    ],
 ];

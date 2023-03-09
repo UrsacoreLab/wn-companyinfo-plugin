@@ -2,6 +2,7 @@
 
 namespace UrsacoreLab\CompanyInfo;
 
+use Backend\Models\UserRole;
 use System\Classes\PluginBase;
 use UrsacoreLab\CompanyInfo\Models\CompanySettings;
 
@@ -17,6 +18,17 @@ class Plugin extends PluginBase
         ];
     }
 
+    public function registerPermissions(): array
+    {
+        return [
+            'ursacorelab.companyinfo.access' => [
+                'tab'   => 'ursacorelab.companyinfo::lang.plugin.name',
+                'label' => 'ursacorelab.companyinfo::lang.permissions.access',
+                'roles' => [UserRole::CODE_DEVELOPER, UserRole::CODE_PUBLISHER],
+            ],
+        ];
+    }
+
     public function registerSettings(): array
     {
         return [
@@ -28,6 +40,7 @@ class Plugin extends PluginBase
                 'class'       => CompanySettings::class,
                 'order'       => 1,
                 'keywords'    => '',
+                'permissions' => ['ursacorelab.companyinfo.access'],
             ],
         ];
     }
