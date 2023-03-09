@@ -14,5 +14,15 @@ class CompanySettings extends Model
 
     public string $settingsFields = 'fields.yaml';
 
-    public array $rules = [];
+    public array $rules = [
+        'companyName'     => 'string',
+        'siteName'        => 'required|string',
+        'slogan'          => 'string',
+        'postalCode'      => 'integer',
+        'addressCountry'  => 'string',
+        'addressRegion'   => 'string',
+        'addressLocality' => 'string',
+        'streetAddress'   => 'string',
+        'email'           => 'required|email',
+    ];
 }
